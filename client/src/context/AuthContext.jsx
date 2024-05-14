@@ -2,7 +2,7 @@ import { createContext,useState,useCallback, useEffect} from "react";
 import { baseUrl, postRequest } from "../utils/services";
 export const AuthContext= createContext()
 export const AuthContextProvider=({children})=>{
-    const baseUrl = "http://localhost:5000/api"
+    const baseUrl = "https://chatapp-2-2nuw.onrender.com/api"
     const [user,setuser]=useState(null)
     const [registerError, setregisterError]=useState(null)
     const [isRegisterLoading, setisRegisterLoading]=useState(false)
